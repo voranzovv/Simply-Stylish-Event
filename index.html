@@ -17,7 +17,7 @@
       font-family: 'Helvetica Neue', Arial, sans-serif;
       color: #fff;
       position: relative;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     /* Slideshow container */
@@ -78,7 +78,7 @@
     .content {
       position: relative;
       z-index: 2;
-      height: 100%;
+      min-height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -96,9 +96,9 @@
     }
 
     p {
-      font-size: 1.3rem;
-      margin-bottom: 2rem;
-      max-width: 650px;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      max-width: 700px;
       line-height: 1.6;
     }
 
@@ -118,11 +118,47 @@
       background: #d81b60;
     }
 
+    .contact {
+      margin-top: 2rem;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .contact a {
+      color: #ff80ab;
+      text-decoration: none;
+    }
+
+    .services {
+      margin-top: 3rem;
+      max-width: 1000px;
+      text-align: left;
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .service-list li {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
     footer {
-      position: absolute;
-      bottom: 20px;
-      left: 0;
-      right: 0;
+      margin-top: 3rem;
       text-align: center;
       font-size: 0.9rem;
       color: #ddd;
@@ -142,11 +178,43 @@
     <h1>Simply Stylish Event</h1>
     <p>From weddings to parties to corporate events, we bring elegance and unforgettable moments.<br>
     Our website is currently under construction, but we’ll be live very soon!</p>
-    <a href="mailto:info@simplystylishevent.com" class="btn">Contact Us</a>
-  </div>
 
-  <footer>
-    © 2025 SimplyStylishEvent. All Rights Reserved.
-  </footer>
+    <a href="mailto:ssdecorcaks@gmail.com" class="btn">Email Us</a>
+
+    <!-- Contact info -->
+    <div class="contact">
+      <p>📞 Phone: <a href="tel:+447444669393">+44 7444 669393</a></p>
+      <p>📧 Email: <a href="mailto:ssdecorcaks@gmail.com">ssdecorcaks@gmail.com</a></p>
+      <p>📍 Address: 117 Lay Street, IF1 4BH</p>
+    </div>
+
+    <!-- Services -->
+    <div class="services">
+      <h2>Our Services</h2>
+      <ul class="service-list">
+        <li>Production</li>
+        <li>Pretty Add Ons</li>
+        <li>Stage & Backdrops</li>
+        <li>Stage Hire</li>
+        <li>Tree Hire</li>
+        <li>Table Linen Hire</li>
+        <li>VIP Tables</li>
+        <li>Dance Floor Hire</li>
+        <li>Events</li>
+        <li>Place Setting</li>
+        <li>Furniture Hire</li>
+        <li>DJ Booths</li>
+        <li>Cake Tables</li>
+        <li>Centrepieces</li>
+        <li>Ceremony Setup</li>
+        <li>Chair Cover Hire</li>
+        <li>Charger Plate Hire</li>
+      </ul>
+    </div>
+
+    <footer>
+      © 2025 SimplyStylishEvent. All Rights Reserved.
+    </footer>
+  </div>
 </body>
 </html>
