@@ -1,198 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SimplyStylishEvent | Under Construction</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simply Stylish Event</title>
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
 
-    body, html {
-      height: 100%;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      color: #fff;
-      position: relative;
-      overflow-x: hidden;
-    }
+    <style>
+      /* --- Custom Edits for Simply Stylish Event --- */
+      .tm-parallax {
+        background-image: url("img/wedding-hero.jpg");
+        background-size: cover;
+        background-position: center;
+      }
 
-    /* Slideshow container */
-    .slideshow {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
+      .tm-hero-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        color: #fff4f4;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+      }
 
-    .slide {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      opacity: 0;
-      animation: fade 18s infinite;
-    }
+      .tm-hero-subtitle {
+        font-size: 1.3rem;
+        color: #ffe8f1;
+        font-weight: 300;
+      }
 
-    /* Wedding image */
-    .slide:nth-child(1) {
-      background-image: url('https://images.unsplash.com/photo-1529634890131-1a9f1d5c9d88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-      animation-delay: 0s;
-    }
+      .tm-navbar.scroll {
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
 
-    /* Party image */
-    .slide:nth-child(2) {
-      background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-      animation-delay: 6s;
-    }
+      .tm-navbar.scroll .navbar-brand,
+      .tm-navbar.scroll .tm-nav-link {
+        color: #333 !important;
+      }
 
-    /* Corporate event image */
-    .slide:nth-child(3) {
-      background-image: url('https://images.unsplash.com/photo-1531058020387-3be344556be6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-      animation-delay: 12s;
-    }
+      .tm-text-primary {
+        color: #d19ca7 !important;
+      }
 
-    @keyframes fade {
-      0% { opacity: 0; }
-      10% { opacity: 1; }
-      30% { opacity: 1; }
-      40% { opacity: 0; }
-      100% { opacity: 0; }
-    }
+      footer {
+        background-color: #fdf2f5;
+        padding: 20px 0;
+        color: #444;
+      }
 
-    /* Overlay */
-    body::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.55);
-      z-index: 0;
-    }
+      .tm-footer-link {
+        color: #d19ca7;
+      }
 
-    .content {
-      position: relative;
-      z-index: 2;
-      min-height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
+      .tm-btn-primary {
+        background-color: #d19ca7;
+        border: none;
+      }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      letter-spacing: 2px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
+      .tm-btn-primary:hover {
+        background-color: #c48a98;
+      }
+    </style>
+  </head>
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      max-width: 700px;
-      line-height: 1.6;
-    }
+  <body>    
+    <!-- Hero Section -->
+    <section id="hero" class="text-white tm-font-big tm-parallax">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <div class="tm-next">
+              <a href="#hero" class="navbar-brand">Simply Stylish Event</a>
+          </div>             
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link tm-nav-link" href="#introduction">About</a></li>
+              <li class="nav-item"><a class="nav-link tm-nav-link" href="#work">Our Work</a></li>
+              <li class="nav-item"><a class="nav-link tm-nav-link" href="#contact">Contact</a></li>                    
+            </ul>
+          </div>        
+        </div>
+      </nav>
+      
+      <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
+            <h2 class="tm-hero-title">Simply Stylish Event</h2>
+            <p class="tm-hero-subtitle">
+              Weddings • Parties • Corporate Events <br>
+              Elegance. Creativity. Unforgettable Moments.
+            </p>
+        </div>        
+      </div>
 
-    .btn {
-      padding: 0.9rem 1.8rem;
-      border: none;
-      background: #ff4081;
-      color: white;
-      font-size: 1rem;
-      border-radius: 30px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
+      <div class="tm-next tm-intro-next">
+        <a href="#introduction" class="text-center tm-down-arrow-link">
+          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
+        </a>
+      </div>      
+    </section>
 
-    .btn:hover {
-      background: #d81b60;
-    }
+    <!-- About Section -->
+    <section id="introduction" class="tm-section-pad-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/wedding decore.jpg" alt="Wedding Decor" class="img-fluid tm-intro-img" />
+          </div>
+          <div class="col-lg-6">
+            <div class="tm-intro-text-container">
+                <h2 class="tm-text-primary mb-4 tm-section-title">About Us</h2>
+                <p class="mb-4 tm-intro-text">
+                  At Simply Stylish Event, we transform your special moments into unforgettable experiences.
+                  From romantic weddings to elegant corporate gatherings, we bring your vision to life with style and precision.
+                </p>
+                <p class="mb-5 tm-intro-text">
+                  Our team specializes in décor, coordination, and creative design that reflects your story — effortlessly and beautifully.
+                </p>
+                <div class="tm-next">
+                  <a href="#work" class="tm-intro-text tm-btn-primary">View Our Work</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    .contact {
-      margin-top: 2rem;
-      font-size: 1rem;
-      line-height: 1.8;
-    }
+    <!-- Work / Gallery -->
+    <section id="work" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="text-center col-12">
+          <h2 class="tm-text-primary tm-section-title mb-4">Our Work</h2>
+          <p class="mx-auto tm-work-description">
+            A glimpse of the weddings, events, and moments we’ve beautifully curated for our clients.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="mx-auto tm-gallery-container">
+              <div class="grid tm-gallery">
+                <a href="img/wedding decore.jpg"><figure class="effect-honey tm-gallery-item"><img src="img/wedding1.jpg" alt="Wedding Decor" class="img-fluid"></figure></a>
+                <a href="img/weddingbg.jpg"><figure class="effect-honey tm-gallery-item"><img src="img/wedding2.jpg" alt="Wedding Setup" class="img-fluid"></figure></a>
+                <a href="img/gallery-img-06.jpg"><figure class="effect-honey tm-gallery-item"><img src="img/wedding3.jpg" alt="Table Setup" class="img-fluid"></figure></a>
+              </div>
+            </div>                
+          </div>        
+        </div>
+      </div>
+    </section>
 
-    .contact a {
-      color: #ff80ab;
-      text-decoration: none;
-    }
+    <!-- Contact Section -->
+    <section id="contact" class="tm-section-pad-top tm-parallax-2">
+      <div class="container tm-container-contact">
+        <div class="text-center col-12">
+          <h2 class="mb-4 tm-section-title">Contact Us</h2>
+          <div class="mb-5 tm-underline"><div class="tm-underline-inner"></div></div>
+          <p class="mb-5">
+            Let’s start planning your perfect event! Reach out to us today.
+          </p>
+        </div>
+        
+        <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+          <a href="tel:+447444669393" class="tm-contact-item-link">
+              <i class="fas fa-3x fa-phone mr-4"></i>
+              <span class="mb-0">+44 7444 669393</span>
+          </a>              
+        </div>
+        <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+          <a href="mailto:ssdecorcaks@gmail.com" class="tm-contact-item-link">
+              <i class="fas fa-3x fa-envelope mr-4"></i>
+              <span class="mb-0">ssdecorcaks@gmail.com</span>
+          </a>              
+        </div>
+        <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+          <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
+          <span class="mb-0">117 Lay Street, IF1 4BH</span>             
+        </div>
+      </div>
+      <footer class="text-center small tm-footer">
+          <p class="mb-0">
+            © 2025 Simply Stylish Event — Designed with ❤️ 
+          </p>
+        </footer>
+    </section>
 
-    .services {
-      margin-top: 3rem;
-      max-width: 1000px;
-      text-align: left;
-    }
-
-    .services h2 {
-      text-align: center;
-      margin-bottom: 1rem;
-      font-size: 2rem;
-    }
-
-    .service-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      list-style: none;
-      padding: 0;
-    }
-
-    .service-list li {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      font-size: 1rem;
-    }
-
-    footer {
-      margin-top: 3rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #ddd;
-      z-index: 2;
-    }
-  </style>
-</head>
-<body>
-  <!-- Background slideshow -->
-  <div class="slideshow">
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
-  </div>
-
-  <div class="content">
-    <h1>Simply Stylish Event</h1>
-    <p>From weddings to parties to corporate events, we bring elegance and unforgettable moments.<br>
-    Our website is currently under construction, but we’ll be live very soon!</p>
-
-    <a href="mailto:ssdecorcaks@gmail.com" class="btn">Email Us</a>
-
-    <!-- Contact info -->
-    <div class="contact">
-      <p>📞 Phone: <a href="tel:+447444669393">+44 7444 669393</a></p>
-      <p>📧 Email: <a href="mailto:ssdecorcaks@gmail.com">ssdecorcaks@gmail.com</a></p>
-      <p>📍 Address: 117 Lay Street, IF1 4BH</p>
-    </div>
-
-
-
-    <footer>
-      © 2025 SimplyStylishEvent. All Rights Reserved.
-    </footer>
-  </div>
-</body>
+    <!-- Scripts -->
+    <script src="js/jquery-1.9.1.min.js"></script>     
+    <script src="slick/slick.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/custom.js"></script>
+  </body>
 </html>
