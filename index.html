@@ -1,202 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Simply Stylish Event</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/templatemo-style.css" />
 
-    <style>
-      /* --- Custom Edits for Simply Stylish Event --- */
-      .tm-parallax {
-        background-image: url("img/wedding-hero.jpg");
-        background-size: cover;
-        background-position: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Simply Stylish Event</title>
+  <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/templatemo-style.css" />
 
-      .tm-hero-title {
-        font-family: 'Playfair Display', serif;
-        font-size: 3rem;
-        color: #fff4f4;
-        text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-      }
+  <style>
+    /* --- Custom Edits for Simply Stylish Event --- */
+    .tm-parallax {
+      background-image: url("img/wedding-hero.jpg");
+      background-size: cover;
+      background-position: center;
+    }
 
-      .tm-hero-subtitle {
-        font-size: 1.3rem;
-        color: #ffe8f1;
-        font-weight: 300;
-      }
+    .tm-hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #fff4f4;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    }
 
-      .tm-navbar.scroll {
-        background-color: rgba(255, 255, 255, 0.95);
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      }
+    .tm-hero-subtitle {
+      font-size: 1.3rem;
+      color: #ffe8f1;
+      font-weight: 300;
+    }
 
-      .tm-navbar.scroll .navbar-brand,
-      .tm-navbar.scroll .tm-nav-link {
-        color: #333 !important;
-      }
+    .tm-navbar.scroll {
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
 
-      .tm-text-primary {
-        color: #d19ca7 !important;
-      }
+    .tm-navbar.scroll .navbar-brand,
+    .tm-navbar.scroll .tm-nav-link {
+      color: #333 !important;
+    }
 
-      footer {
-        background-color: #fdf2f5;
-        padding: 20px 0;
-        color: #444;
-      }
+    .tm-text-primary {
+      color: #d19ca7 !important;
+    }
 
-      .tm-footer-link {
-        color: #d19ca7;
-      }
+    footer {
+      background-color: #fdf2f5;
+      padding: 20px 0;
+      color: #444;
+    }
 
-      .tm-btn-primary {
-        background-color: #d19ca7;
-        border: none;
-      }
+    .tm-footer-link {
+      color: #d19ca7;
+    }
 
-      .tm-btn-primary:hover {
-        background-color: #c48a98;
-      }
-    </style>
-  </head>
+    .tm-btn-primary {
+      background-color: #d19ca7;
+      border: none;
+    }
 
-  <body>    
-    <!-- Hero Section -->
-    <section id="hero" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">   
-          <div class="tm-next">
-              <a href="#hero" class="navbar-brand">Simply Stylish Event</a>
-          </div>             
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link tm-nav-link" href="#introduction">About</a></li>
-              <li class="nav-item"><a class="nav-link tm-nav-link" href="#work">Our Work</a></li>
-              <li class="nav-item"><a class="nav-link tm-nav-link" href="#contact">Contact</a></li>                    
-            </ul>
-          </div>        
+    .tm-btn-primary:hover {
+      background-color: #c48a98;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section id="hero" class="text-white tm-font-big tm-parallax">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+      <div class="container">
+        <div class="tm-next">
+          <a href="#hero" class="navbar-brand">Simply Stylish Event</a>
         </div>
-      </nav>
-      
-      <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">Simply Stylish Event</h2>
-            <p class="tm-hero-subtitle">
-              Weddings • Parties • Corporate Events <br>
-              Elegance. Creativity. Unforgettable Moments.
-            </p>
-        </div>        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <i class="fas fa-bars navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link tm-nav-link" href="#introduction">About</a></li>
+            <li class="nav-item"><a class="nav-link tm-nav-link" href="#work">Our Work</a></li>
+            <li class="nav-item"><a class="nav-link tm-nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <div class="tm-next tm-intro-next">
+    <div class="text-center tm-hero-text-container">
+      <div class="tm-hero-text-container-inner">
+        <h2 class="tm-hero-title">Simply Stylish Event</h2>
+        <p class="tm-hero-subtitle">
+          Weddings • Parties • Corporate Events <br>
+          Elegance. Creativity. Unforgettable Moments.
+        </p>
+      </div>
+    </div>
+
+    <!-- <div class="tm-next tm-intro-next">
         <a href="#introduction" class="text-center tm-down-arrow-link">
           <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
         </a>
-      </div>      
-    </section>
+      </div>       -->
+  </section>
 
-    <!-- About Section -->
-    <section id="introduction" class="tm-section-pad-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="img/wedding decore.jpg" alt="Wedding Decor" class="img-fluid tm-intro-img" />
-          </div>
-          <div class="col-lg-6">
-            <div class="tm-intro-text-container">
-                <h2 class="tm-text-primary mb-4 tm-section-title">About Us</h2>
-                <p class="mb-4 tm-intro-text">
-                  At Simply Stylish Event, we transform your special moments into unforgettable experiences.
-                  From romantic weddings to elegant corporate gatherings, we bring your vision to life with style and precision.
-                </p>
-                <p class="mb-5 tm-intro-text">
-                  Our team specializes in décor, coordination, and creative design that reflects your story — effortlessly and beautifully.
-                </p>
-                <div class="tm-next">
-                  <a href="#work" class="tm-intro-text tm-btn-primary">View Our Work</a>
-                </div>
+  <!-- About Section -->
+  <section id="introduction" class="tm-section-pad-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="img/wedding decore.jpg" alt="Wedding Decor" class="img-fluid tm-intro-img" />
+        </div>
+        <div class="col-lg-6">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">About Us</h2>
+            <p class="mb-4 tm-intro-text">
+              At Simply Stylish Event, we transform your special moments into unforgettable experiences.
+              From romantic weddings to elegant corporate gatherings, we bring your vision to life with style and
+              precision.
+            </p>
+            <p class="mb-5 tm-intro-text">
+              Our team specializes in décor, coordination, and creative design that reflects your story — effortlessly
+              and beautifully.
+            </p>
+            <div class="tm-next">
+              <a href="#work" class="tm-intro-text tm-btn-primary">View Our Work</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Work / Gallery -->
-    <section id="work" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="text-center col-12">
-          <h2 class="tm-text-primary tm-section-title mb-4">Our Work</h2>
-          <p class="mx-auto tm-work-description">
-            A glimpse of the weddings, events, and moments we’ve beautifully curated for our clients.
-          </p>
+  <!-- About2 Section -->
+  <section id="introduction" class="tm-section-pad-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text First -->
+        <div class="col-lg-6">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Weddings & Receptions</h2>
+            <p class="mb-4 tm-intro-text">
+                Your dream wedding deserves an extraordinary venue. Our halls accommodate traditional and contemporary weddings, featuring spacious seating, customizable décor, and catering services. We ensure your special day is nothing less than perfect.
+
+            </p>
+            <p class="mb-5 tm-intro-text">
+              Whether you're organizing a sit-down dinner or a grand reception, we guarantee that your special day will
+              be nothing less than perfect.
+            </p>
+            <!-- <div class="tm-next">
+              <a href="#work" class="tm-intro-text tm-btn-primary">View Our Work</a>
+            </div> -->
+          </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="mx-auto tm-gallery-container">
-              <div class="grid tm-gallery">
-                <a href="img/wedding decore.jpg"><figure class="effect-honey tm-gallery-item"><img src="img/wedding1.jpg" alt="Wedding Decor" class="img-fluid"></figure></a>
-                <a href="img/weddingbg.jpg"><figure class="effect-honey tm-gallery-item"><img src="img/wedding2.jpg" alt="Wedding Setup" class="img-fluid"></figure></a>
-                <a href="img/gallery-img-06.jpg"><figure class="effect-honey tm-gallery-item"><img src="img/wedding3.jpg" alt="Table Setup" class="img-fluid"></figure></a>
-              </div>
-            </div>                
-          </div>        
+
+        <!-- Image Second -->
+        <div class="col-lg-6">
+          <img src="img/Weddings & Receptions.jpg" alt="Wedding Decor" class="img-fluid tm-intro-img" />
         </div>
       </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
-      <div class="container tm-container-contact">
-        <div class="text-center col-12">
-          <h2 class="mb-4 tm-section-title">Contact Us</h2>
-          <div class="mb-5 tm-underline"><div class="tm-underline-inner"></div></div>
-          <p class="mb-5">
-            Let’s start planning your perfect event! Reach out to us today.
-          </p>
+    </div>
+  </section>
+  <!-- Nikah Ceremonies & Engagements -->
+  <section id="introduction" class="tm-section-pad-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="img/Nikah Ceremonies & Engagements.jpg" alt="Wedding Decor" class="img-fluid tm-intro-img" />
         </div>
-        
-        <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-          <a href="tel:+447444669393" class="tm-contact-item-link">
-              <i class="fas fa-3x fa-phone mr-4"></i>
-              <span class="mb-0">+44 7444 669393</span>
-          </a>              
-        </div>
-        <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-          <a href="mailto:ssdecorcaks@gmail.com" class="tm-contact-item-link">
-              <i class="fas fa-3x fa-envelope mr-4"></i>
-              <span class="mb-0">ssdecorcaks@gmail.com</span>
-          </a>              
-        </div>
-        <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-          <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
-          <span class="mb-0">117 Lay Street, IF1 4BH</span>             
+        <div class="col-lg-6">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Nikah Ceremonies & Engagements</h2>
+            <p class="mb-4 tm-intro-text">
+                Celebrate your Nikah in a respectful setting that honors tradition. Our venues provide gender-separated spaces, prayer rooms, and alcohol-free options. 
+            </p>
+            <p class="mb-5 tm-intro-text">
+              Whether you need a small Nikah in Ilford or a larger engagement in Edgware, we help you find the perfect hall for your celebration.
+            </p>
+            <!-- <div class="tm-next">
+              <a href="#work" class="tm-intro-text tm-btn-primary">View Our Work</a>
+            </div> -->
+          </div>
         </div>
       </div>
-      <footer class="text-center small tm-footer">
-          <p class="mb-0">
-            © 2025 Simply Stylish Event — Designed with ❤️ 
-          </p>
-        </footer>
-    </section>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <script src="js/jquery-1.9.1.min.js"></script>     
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/custom.js"></script>
-  </body>
+  <!-- Corporate Events -->
+  <section id="introduction" class="tm-section-pad-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text First -->
+        <div class="col-lg-6">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Corporate Events</h2>
+            <p class="mb-4 tm-intro-text">
+                Our banquet spaces are perfect for professional events, from conferences to corporate galas. 
+            </p>
+            <p class="mb-5 tm-intro-text">
+              Equipped with AV systems and high-speed internet, these venues ensure a successful atmosphere for workshops, meetings, and networking events.
+            </p>
+            <!-- <div class="tm-next">
+              <a href="#work" class="tm-intro-text tm-btn-primary">View Our Work</a>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Image Second -->
+        <div class="col-lg-6">
+          <img src="img/Corporate Events.jpg" alt="Wedding Decor" class="img-fluid tm-intro-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  create catering services section
+
+
+  <!-- Work / Gallery -->
+  <section id="work" class="tm-section-pad-top">
+    <div class="container tm-container-gallery">
+      <div class="text-center col-12">
+        <h2 class="tm-text-primary tm-section-title mb-4">Weddings & Receptions</h2>
+        <p class="mx-auto tm-work-description">
+          Your dream wedding deserves an extraordinary venue. Our wedding halls are designed to accommodate traditional,
+          cultural, and contemporary weddings of all kinds — from sophisticated white weddings to lively South Asian
+          celebrations. Featuring spacious seating, customizable décor options, bridal suites, and catering services,
+          our banquet halls provide everything you need for an unforgettable wedding experience. Whether you're
+          organizing a sit-down dinner or a grand reception, we guarantee that your special day will be nothing less
+          than perfect.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="mx-auto tm-gallery-container">
+            <div class="grid tm-gallery">
+              <a href="img/food.jpg">
+                <figure class="effect-honey tm-gallery-item"><img src="img/food1.avif" alt="Wedding Decor"
+                    class="img-fluid"></figure>
+              </a>
+              <a href="img/weddingbg.jpg">
+                <figure class="effect-honey tm-gallery-item"><img src="img/work2.avif" alt="Wedding Setup"
+                    class="img-fluid"></figure>
+              </a>
+              <a href="img/gallery-img-06.jpg">
+                <figure class="effect-honey tm-gallery-item"><img src="img/work4.avif" alt="Table Setup"
+                    class="img-fluid"></figure>
+              </a>
+              <a href="img/food.jpg">
+                <figure class="effect-honey tm-gallery-item"><img src="img/work5.avif" alt="Wedding Decor"
+                    class="img-fluid"></figure>
+              </a>
+              <a href="img/weddingbg.jpg">
+                <figure class="effect-honey tm-gallery-item"><img src="img/work2.avif" alt="Wedding Setup"
+                    class="img-fluid"></figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="tm-section-pad-top tm-parallax-2">
+    <div class="container tm-container-contact">
+      <div class="text-center col-12">
+        <h2 class="mb-4 tm-section-title">Contact Us</h2>
+        <div class="mb-5 tm-underline">
+          <div class="tm-underline-inner"></div>
+        </div>
+        <p class="mb-5">
+          Let’s start planning your perfect event! Reach out to us today.
+        </p>
+      </div>
+
+      <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+        <a href="tel:+447444669393" class="tm-contact-item-link">
+          <i class="fas fa-3x fa-phone mr-4"></i>
+          <span class="mb-0">+44 7444 669393</span>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+        <a href="mailto:ssdecorcaks@gmail.com" class="tm-contact-item-link">
+          <i class="fas fa-3x fa-envelope mr-4"></i>
+          <span class="mb-0">ssdecorcaks@gmail.com</span>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+        <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
+        <span class="mb-0">117 Lay Street, IF1 4BH</span>
+      </div>
+    </div>
+    <footer class="text-center small tm-footer">
+      <p class="mb-0">
+        © 2025 Simply Stylish Event — Designed with ❤️
+      </p>
+    </footer>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
 </html>
